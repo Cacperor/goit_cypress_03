@@ -9,11 +9,6 @@ class LoginPage {
       cy.contains('Log in').click();
     }
   
-    logout() {
-      cy.get('#open-navigation-menu-mobile').click();
-      cy.contains('Log out').click();
-    }
-  
     verifyUrl() {
       cy.url().should('include', '/account/login');
     }
